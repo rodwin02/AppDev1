@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Forum Hub</title>
+</head>
+<body>
+
+  <nav class="header">
+    <div class="left">
+      <img src="images/Forum Hub Logo 1.png" alt="">
+    </div>
+
+    <div class="middle">
+      <form class="form">
+        <button>
+            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+        <input class="input" placeholder="Search Topics" required="" type="text">
+        <button class="reset" type="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </form>
+    </div>
+    
+    <div class="right">
+      <img class="bell" src="images/bell 2.png" alt="">
+      
+      <div class="dropdown">
+
+        <button onclick="myFunction()" class="dropbtn">
+          <div class="left-profile">
+            <img src="images/profile 1.png" alt="">
+         </div>
+  
+         <div class="middle-profile">
+            <div class="name">Abdul Jabbar</div>
+            <div class="status">Online</div>
+         </div>
+  
+         <div class="right-profile">
+            <i class="fa-solid fa-caret-down"></i>
+         
+         </div>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#logout">Logout</a>
+        </div>
+      </div>
+     
+      
+    </div>
+    
+
+  </nav>
+
+  <nav class="sidebar">
+       <button id="start">Start Discussion</button>
+       
+
+        <div class="topic-container">
+            <div class="button1">
+              
+              <div class="L">
+                <i class="fa-regular fa-comments"></i>
+              </div>
+              <div class="R">
+                <div class="topic-name">All Discussion</div>
+              </div>
+                
+            </div>
+
+            <div class="button1">
+
+              <div class="L">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="R">
+                <div class="topic-name">Favorites</div>
+              </div>
+
+            </div>
+
+          <h3>EXPLORE</h3>
+
+          <div class="button1">
+
+              <div class="L">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+              <div class="R">
+                <div class="topic-name">Data Structure</div>
+              </div>
+  
+          </div>
+
+          <div class="button1">
+
+            <div class="L">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">Networking</div>
+            </div>
+
+          </div>
+
+          <div class="button1">
+
+            <div class="L">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">Data Base</div>
+            </div>
+          </div>
+
+          <div class="button1">
+
+            <div class="L">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">OS</div>
+            </div>
+
+          </div>
+
+          <div class="button1">
+
+            <div class="L">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="R">
+              <span class="topic-name">Java</span>
+            </div>
+
+          </div>
+
+          <div class="button1">
+
+            <div class="L">
+              <i class="fa-brands fa-apple"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">Ios</div>
+            </div>
+
+          </div>
+
+          <div class="button1">
+
+            <div class="L">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">Html</div>
+
+            </div>
+          </div>
+
+          <div class="button1">
+
+            <div class="L">
+              <i class="fa-brands fa-css3"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">Css</div>
+            </div>
+
+          </div>
+
+          <div class="button1">
+            <div class="L">
+              <i class="fa-brands fa-android"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">Andriod</div>
+            </div>
+          </div>
+
+          <div class="button1">
+            <div class="L">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="R">
+              <div class="topic-name">Python</div>
+            </div>
+          
+                
+          </div>
+                 
+      </div>
+
+  </nav>
+
+  <section class="home-page">
+    <div class="home-page-container">
+
+      <div class="section">
+
+        <h4>Popular Post</h4>
+        <div class="popular-post">
+          <a class="top" href="#">Top</a>
+          <a class="latest" href="#">Latest</a>
+        </div>
+
+    
+        <div class="post-container">
+          <h3 class="topic-title">Difference between Static and Dynamic Hashing</h3>
+
+          <div class="topic-btn">
+            <a class="topics" href="#">Data Structure</a>
+          </div>  
+
+          <div class="topic-btn">
+            <a class="topics" href="#">Data Base</a>
+          </div> 
+
+          <div class="user-info-container">
+            <div class="profile-section">
+              <img src="images/undraw_Female_avatar_re_59g8 (1) 1.png" alt="">
+            </div>
+            <div class="name-section">
+              <h1 class="username">Abdul Jabbar</h1>
+              <h2 class="posted-date">2 days ago</h2>
+            </div>
+          </div>
+
+          <div class="topic-post">
+            <p class="text">Hashing is a computation technique in which hashing functions take variable-length data as input and issue a 
+              shortened fixed-length data as output. The output data is often called a "Hash Code", "Key", or simply "Hash". 
+              The data on which hashing works is called a "Data Bucket". Characteristics of Hashing Technique Hashing 
+              techniques come with the following characteristics − The first characteristic is, hashing technique is 
+              deterministic. Means, whatever number of times you invoke the function on the same test variable, it delivers 
+              the same fixed-length result. The second characteristic is its unidirectional action.</p>
+          </div>
+
+          <div class="reaction-container">
+
+            <div class="reaction">
+              <button type="button">
+                 <i class="far fa-thumbs-up"></i>
+                    <span class="like">Like</span>
+              </button>
+
+              <button type="button">
+                 <i class="far fa-comment"></i>
+                    <span class="comments">Comments</span>
+             </button>
+
+             <button type="button">
+                <i class="fab fa-font-awesome-flag"></i>
+                    <span class="report">Report</span>
+             </button>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <h3 class="topic-title">Difference between Static and Dynamic Hashing</h3>
+
+          <div class="topic-btn">
+            <a class="topics" href="#">Data Structure</a>
+          </div>  
+
+          <div class="topic-btn">
+            <a class="topics" href="#">Data Base</a>
+          </div> 
+
+          <div class="user-info-container">
+            <div class="profile-section">
+              <img src="images/undraw_Female_avatar_re_59g8 (1) 1.png" alt="">
+            </div>
+            <div class="name-section">
+              <h1 class="username">Abdul Jabbar</h1>
+              <h2 class="posted-date">2 days ago</h2>
+            </div>
+          </div>
+
+          <div class="topic-post">
+            <p class="text">Hashing is a computation technique in which hashing functions take variable-length data as input and issue a 
+              shortened fixed-length data as output. The output data is often called a "Hash Code", "Key", or simply "Hash". 
+              The data on which hashing works is called a "Data Bucket". Characteristics of Hashing Technique Hashing 
+              techniques come with the following characteristics − The first characteristic is, hashing technique is 
+              deterministic. Means, whatever number of times you invoke the function on the same test variable, it delivers 
+              the same fixed-length result. The second characteristic is its unidirectional action.</p>
+          </div>
+
+          <div class="reaction-container">
+
+            <div class="reaction">
+              <button type="button">
+                 <i class="far fa-thumbs-up"></i>
+                    <span class="like">Like</span>
+              </button>
+
+              <button type="button">
+                 <i class="far fa-comment"></i>
+                    <span class="comments">Comments</span>
+             </button>
+
+             <button type="button">
+                <i class="fab fa-font-awesome-flag"></i>
+                    <span class="report">Report</span>
+             </button>
+            
+            </div>
+          </div>
+        </div>
+       </div>
+  </section>
+
+  <div class="create-post">
+    <div class="create-container">
+      
+    </div>
+  </div>
+
+
+
+ <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+  
+</body>
+</html>
